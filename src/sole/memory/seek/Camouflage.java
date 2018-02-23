@@ -19,7 +19,7 @@ public class Camouflage {
     }
 
     public void setCamouflage() {
-        switch (player.getCamouflage()) {
+        switch (player.getCamouflageType()) {
             case GamePlayer.PLAYER_CAMOUFLAGE_TYPE_ENTITY:
                 player.player.setNameTagVisible(false);
                 removePlayer();

@@ -5,11 +5,14 @@ import cn.nukkit.scheduler.Task;
 import sole.memory.room.Room;
 
 public class UpdateTask extends Task {
+
+    private Room room;
+    public UpdateTask(Room room){
+
+    }
     @Override
     public void onRun(int i) {
-        for (Room room:Room.room_list.values()) {
-            room.updateRoom();
-        }
+        room.updateRoom();
     }
 
 }
